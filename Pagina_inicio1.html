@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="proyecto.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Open+Sans:wght@300&family=Rajdhani:wght@700&display=swap');
+        .letra-sans {
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        
+        .letra-dura {
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        .letras-naranja {
+            color: #fc5a34;
+        }
+        
+        .letra-gris {
+            color: #787878;
+        }
+        
+        #linea1 {
+            border: 0.5px solid #f6f6f6;
+        }
+        
+        #linea2 {
+            margin-left: 110px;
+            margin-right: 130px;
+        }
+        
+        .espacio-secciones {
+            margin-left: 5%;
+        }
+    </style>
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <header>
+        <div class='nav-superior'>
+            <div class='nav-superior-parte-izquierda'>
+                <ul>
+                    <li><img src="imagenes/ubicacion.png" alt="ubicacion" /> Box 565, Charlestown, Nevis, West indies
+                    </li>
+                    <li><img src="imagenes/reloj.png" alt="reloj" /> Mon-Sat: 8.00AM-17.30PM </li>
+                </ul>
+            </div>
+            <div class='nav-superior-parte-derecha'>
+                <ul>
+                    <li> Currency:
+                        <span class="letras-naranja">USD</span>
+                        <img src="imagenes/flecha-hacia-abajo.png" alt="Flecha" />
+                    </li>
+                    <li> Language:
+                        <span class="letras-naranja">EN</span>
+                        <img src="imagenes/flecha-hacia-abajo.png" alt="Flecha" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-container-nav">
+            <div class="nav-logo">
+                <img src="imagenes/logo.png" alt="">
+            </div>
+            <div class="nav-buscador">
+                <form action="#" method="post" target="_blank">
+                    <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" value="Search entre strore here...">
+                    <input title="boton enviar" alt="boton enviar" src="imagenes/buscador.png" type="image" />
+                </form>
+
+            </div>
+            <div class="nav-car">
+                <img src="imagenes/corazon.png" alt=" ">
+                <a href="">WHISHLIST</a>
+                <img src="imagenes/cesta.png" alt=" ">
+                <a href="">MY CART</a>
+            </div>
+        </div>
+
+        <img src="imagen/logo.png" alt="logo-propio" id="logo-propio">
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">SHOP DEPARTAMENTS</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">HOME
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <a href="#">SHOP</a></li>
+                    <li> <a href="#">STORE LIST</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">BLOG
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">PAGES
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <a href="#">CONTACT</a></li>
+                    <li><a class="active " href="#" style="color: #474747; background-color: #ffffff; ">Hotline: +0(800) 423-754</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <img src="imagenes/cabecera.jpg " alt="Coche" id="imagen-cabecera">
+                <div class="contenedor-imagen-buscador">
+                    <h1>
+                        SEARCH MATCHING YOUR VEHICLE
+                    </h1>
+                    <p class="text-center ">Customize, Modify, Upgrade, Repair, Replace.</p>
+
+                    <form action="#" id="buscador-de-coche">
+                        <select id="cars" name="cars">
+                            <option>--Make--</option>
+                            <option>Option1</option>
+                        </select>
+                        <input type="text" id="model" name="model" value="--Model-- ">
+                        <input type="text" id="year" name="year" value="--Year-- ">
+                        <input type="submit" id="boton-buscar" value="SEARCH">
+                    </form>
+                </div>
+                <div class="grid-container-iconos ">
+                    <div class="grid-icono ">
+                        <img src="imagenes/camion.png " alt="Camion-de-reparto ">
+                    </div>
+                    <div class="grid-item-descripcion ">
+                        <p class="letra-dura " style="font-size:12px; ">FREE DELIVERY</p>
+                        <p class="letra-sans letra-gris " style="font-size:10px; ">Woldwide from $27</p>
+                    </div>
+                    <div class="grid-icono ">
+                        <img src="imagenes/medalla.png " alt="Medalla ">
+                    </div>
+                    <div class="grid-item-descripcion ">
+                        <p class="letra-dura " style="font-size:12px; ">100% GENUINE</p>
+                        <p class="letra-sans letra-gris " style="font-size:10px; ">100% genuine goods</p>
+                    </div>
+                    <div class="grid-icono ">
+                        <img src="imagenes/paquete.png " alt="Paquete ">
+                    </div>
+                    <div class="grid-item-descripcion ">
+                        <p class="letra-dura " style="font-size:12px; ">EZ PARTS RETURNS</p>
+                        <p class="letra-sans letra-gris " style="font-size:10px; ">365 days return</p>
+                    </div>
+                    <div class="grid-icono ">
+                        <img src="imagenes/regalo.png " alt="Regalo ">
+                    </div>
+                    <div class="grid-item-descripcion ">
+                        <p class="letra-dura " style="font-size:12px; ">LOYAL CUSTOMERS</p>
+                        <p class="letra-sans letra-gris " style="font-size:10px; ">100k items available</p>
+                    </div>
+                </div>
+            </section>
+            <hr id="linea1">
+            <section id="publicidad-productos">
+                <aside>
+                    <img src="imagenes/publicidad.png" alt="Publicidad" class="publicidad">
+                </aside>
+                <div id="grid-tabla-productos">
+                    <div id="tabla-cabecera" class="secciones-productos">
+                        <a class="letra-dura ">ON SALE</a>
+                        <a class="letra-dura ">TRENDING</a>
+                        <a class="letra-dura ">RECENT</a>
+                        <a class="next-producto">&#10095;</a>
+                        <a class="prev-producto">&#10094;</a>
+                    </div>
+                    <div>
+                        <img src="imagenes/producto1.png" alt="Producto1">
+                        <h5>HORRISON</h5>
+                        <img src="imagenes/estrellas.png" alt="Estrellas" class="img-estrellas">
+                        <p><span class="letra-gris"><del> $397.90</del></span> $350.90</p>
+
+                    </div>
+                    <div>
+                        <img src="imagenes/producto2.png" alt="Producto2">
+                        <h5>WALLNUT DESKT</h5>
+                        <img src="imagenes/estrellas.png" alt="Estrellas" class="img-estrellas">
+                        <p><span class="letra-gris "><del> $419.90</del></span> $350.90</p>
+
+                    </div>
+                    <div>
+                        <img src="imagenes/producto3.png " alt=" ">
+                        <h5>ARPER ROUND</h5>
+                        <img src="imagenes/estrellas.png " alt="Estrellas " class="img-estrellas">
+                        <p><span class="letra-gris "><del> $249,90</del></span> $200.90</p>
+                    </div>
+                    <div>
+                        <img src="imagenes/producto4.png " alt=" ">
+                        <h5>AUTO OIL</h5>
+                        <img src="imagenes/estrellas.png " alt="Estrellas " class="img-estrellas">
+                        <p><span class="letra-gris "><del> $29.90</del></span> $29.00</p>
+                    </div>
+                    <div>
+                        <img src="imagenes/producto5.png " alt=" ">
+                        <h5>ULIVO SET</h5>
+                        <img src="imagenes/estrellas.png " alt="Estrellas " class="img-estrellas">
+                        <p class="letra-gris ">$59.90</p>
+                    </div>
+                    <div>
+                        <img src="imagenes/producto6.png " alt=" ">
+                        <h5>OTTOMAN TURBO</h5>
+                        <img src="imagenes/estrellas.png " alt="Estrellas " class="img-estrellas">
+                        <p><span class="letra-gris "><del> $79.90 </del></span> $78.00</p>
+                    </div>
+                </div>
+            </section>
+            <section id="imagenes-marcas">
+                <div class="marcas ">
+                    <img src="imagenes/fondo2.png " alt=" " class="img-fondo-marcas ">
+                    <h2>CHOOSE PARTS BY BRAND</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="flex-container-marcas ">
+                        <div>
+                            <img src="imagenes/icono1.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono2.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono3.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono4.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono5.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono6.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono7.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono8.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono9.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono10.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono11.png " alt=" ">
+                        </div>
+                        <div>
+                            <img src="imagenes/icono12.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="espacio-secciones">
+                <!-- Tab links -->
+                <div class="flex-container letra-dura ">
+                    <div> <img src="imagenes/seccion1.png " alt=" ">
+                        <h3>STOPTECH</h3>
+                    </div>
+                    <div>
+                        <img src="imagenes/seccion2.png " alt=" ">
+                        <h3>WHEEL & TIRE </h3>
+                    </div>
+                    <div>
+                        <img src="imagenes/seccion3.png " alt=" ">
+                        <h3>CAMERA</h3>
+                    </div>
+                    <div>
+                        <img src="imagenes/seccion4.png " alt=" ">
+                        <h3>TURBO</h3>
+                    </div>
+                    <div>
+                        <img src="imagenes/seccion5.png " alt=" ">
+                        <h3>STEERING</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="espacio-secciones">
+                <div class="secciones-productos ">
+                    <a class="letra-dura ">SERVICE KITS</a>
+                    <a class="letra-dura ">SUSPENSION</a>
+                    <a class="letra-dura ">LIGHTING</a>
+                    <a class="next">&#10095;</a>
+                    <a class="prev">&#10094;</a>
+                </div>
+                <div class="grid-contenedor-productos">
+                    <div class="grid-item-producto1">
+                        <img src="imagenes/producto7.png " alt="Volante">
+                        <p class="quitar-espacios letra-dura ">TASK PENDAT</p>
+                        <img src="imagenes/estrellas.png " alt="Estrellas" class="quitar-espacios">
+                        <p style="font-size:12px; font-weight: bold;" class="quitar-espacios letra-gris letra-dura ">$100.00-$120.00</p>
+                    </div>
+                    <div class="grid-item-producto2">
+                        <img src="imagenes/producto8.png" alt="Frenos">
+                        <p class="quitar-espacios letra-dura">OAK WOODEN</p>
+                        <img src="imagenes/estrellas.png" alt="Estrellas" class="quitar-espacios">
+                        <p style="font-size:12px; font-weight: bold;" class="quitar-espacios letra-gris letra-dura"> $59.90</p>
+                    </div>
+                    <div class="grid-item-producto3">
+                        <img src="imagenes/producto9.png" alt="Rueda">
+                        <p class="quitar-espacios letra-dura">UMBRELLA STAND</p>
+                        <img src="imagenes/estrellas.png" alt="Estrellas" class="quitar-espacios">
+                        <p style="font-size:12px; font-weight: bold;" class="quitar-espacios letra-dura"><span class="letra-gris"><del>$79.90</del> </span> $70.00</p>
+                    </div>
+                    <div class="grid-item-producto4 ">
+                        <div class="caja-naranja">
+                            <div id="contenedor-titulo">
+                                <h4>DEAL OF THE DAY</h4>
+                                <a class="next2">&#10095;</a>
+                                <a class="prev2">&#10094;</a>
+                            </div>
+                            <img src="imagenes/producto10.png" alt="Camara">
+                            <p class="quitar-espacios letra-dura">YAMA CAMERA</p>
+                            <img src="imagenes/estrellas.png" alt="Estrellas" class="quitar-espacios">
+                            <p style="font-size:12px; font-weight: bold;" class="quitar-espacios letra-dura">$100.00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="wrapper ">
+                    <div class="slider" id="slider">
+                        <div class="slides">
+                            <div class="slide" id="slide1">
+                                <div class="caja-texto">
+                                    <h2>OUR HAPPY CLIENTS</h2>
+                                    <p class="letra-sans letra-gris texto-articulos ">Getting the coveted high-five in the hallway from an influence is impressive in its own right, <br> but what's really impressive and where you ought to focus your outreach efforts is getting
+                                        <br> press from influencers in your market.
+                                    </p>
+                                    <h3>Jorgen J.Hansen</h3>
+                                </div>
+                                <img src="imagenes/slide.jpg " alt="photo 1">
+
+                            </div>
+                        </div>
+                        <ul class="slider-controler">
+                            <li><a href="#slide">&bullet;</a></li>
+                            <li><a href="#slide">&bullet;</a></li>
+                            <li><a href="#slide">&bullet;</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <section id="articulos">
+                <div class="grid-container-articulos ">
+                    <div class="item1">
+                        <h2>TIPS ON THE CAR</h2>
+                    </div>
+                    <div class="item2">
+                        <img src="imagenes/articulo1.png " alt="Articulo1" class="img-articulo ">
+                        <h4>NEW FROM BUYAUTOPARTS: MAGNETIC</h4>
+                        <P class="letra-sans " style="font-size: 14px ">AIR CONDITIONING - <span class="letra-gris ">by</span> apar</p>
+                        <p class="letra-sans letra-gris texto-articulos "> Like turbochargers and dual-clutch transmissions, active suspension is supercar technology that has finally made its way to more and more “normal” cars. Oddly enough, it’s the 3-hole box… </p>
+                        <a href="" class="letras-naranja ">READ MORE</a>
+                    </div>
+                    <div class="item3">
+                        <img src="imagenes/articulo2.png " alt="Articulo2" class="img-articulo ">
+                        <h4>UPGRADE FOR THE E30 AND E36 3 SERIES</h4>
+                        <P class="letra-sans " style="font-size: 14px ">AUTO PARTS, BRAKES - <span class="letra-gris ">by</span> apar</p>
+                        <p class="letra-sans letra-gris texto-articulos ">While they were the darling of the “yuppie” class when new, the E30 and E36 BMW 3-Series from the 1980’s and 1990’s have now settled somewhere between. Oddly… </p>
+                        <a href="" class="letras-naranja ">READ MORE</a>
+                    </div>
+                    <div class="item4">
+                        <img src="imagenes/articulo3.png " alt="Articulo3" class="img-articulo ">
+                        <h4>FIX YOUR RIDE, PROTECT THE ENVIRONMENT</h4>
+                        <P class="letra-sans" style="font-size: 14px ">CAR FAIL, CAR FUN, CAR NEWS - <span class="letra-gris ">by</span> apar</p>
+                        <p class="letra-sans letra-gris texto-articulos ">Cars are some of the biggest sources of pollution in the environment, and it doesn’t help if your daily driver is in bad shape because it’s very likely.… </p>
+                        <a href="" class="letras-naranja">READ MORE</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="contenedor-pie">
+            <div class="box">
+                <div class="box1 ">
+                    <img src="imagenes/logo2.png " alt="Logo" class="logo-web">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna consectetur adipiscing elit aliqua.</p>
+                    <table class="default ">
+                        <tr>
+                            <td>
+                                <img src="imagenes/ubi-pie.png " alt="Icono-ubicacion ">
+                            </td>
+                            <td>
+                                <p>Address: Box 565, Charlestown, Nevis, West indies</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="imagenes/telefono-pie.png " alt="Icono-telefono">
+                            </td>
+                            <td>
+                                <p>Phone: +(48) 880 456 789</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="imagenes/email-pie.png " alt="Icono-email">
+                            </td>
+                            <td>
+                                <p>Email: help.apar@gmail.com</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='lista-pie box2'>
+                    <ul>
+                        <li>
+                            <h4>HELP & SUPPORT</h4>
+                        </li>
+                        <li><a href="#" class="enlace-pie ">Whishlist</a></li>
+                        <li><a href="#" class="enlace-pie ">My account</a></li>
+                        <li><a href="#" class="enlace-pie ">Store Locator</a></li>
+                        <li><a href="#" class="enlace-pie ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class='lista-pie box3'>
+                    <ul>
+                        <li>
+                            <h4>ABOUT US</h4>
+                        </li>
+                        <li><a href="#" class="enlace-pie ">Partners</a></li>
+                        <li><a href="#" class="enlace-pie ">Contact Us</a></li>
+                        <li><a href="#" class="enlace-pie ">Product Recall</a></li>
+                        <li><a href="#" class="enlace-pie ">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="box4 ">
+                    <h4>SUBSCRIBE</h4>
+                    <p>Subscribe to our Newsletter and get bonuses for the next purchase</p>
+                    <div>
+                        <p>Enter Your Email</p>
+                    </div>
+                    <video width="300" height="220" controls>
+                        <source src="ProyectoVideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <hr id="linea2">
+            <div class="box-container ">
+                <svg height="90" width="90">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="90%" y2="0%">
+                            <stop offset="20%" style="stop-color:rgba(255,0,0);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgba(40,0,0);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="0" cy="40" rx="50" ry="35" fill="url(#grad1)" />
+                    <text fill="#ffffff" font-size="50" x="5" y="60">C</text>
+                </svg>
+                <div>
+                    <p class="letra-sans">Copyright &copy; 2020 |
+                        <span class="letras-naranja ">APAR</span> All Rights Reserved
+                    </p>
+                </div>
+                <div>
+                    <img src="imagenes/redes.png " alt="Redes Sociales">
+                </div>
+                <div>
+                    <img src="imagenes/tarjetas.png " alt="Metodos de pago">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

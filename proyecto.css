@@ -1,0 +1,1041 @@
+                    /*Parte Multimedia*/
+                    
+                    #logo-propio {
+                        position: fixed;
+                        margin-top: -5%;
+                        left: 90%;
+                        width: 6%;
+                    }
+                    /*@media(max-width:1218px) {
+                    #logo-propio {
+                        top: 10px;
+                    }
+                }
+                
+                @media(max-width:926px) {
+                    #logo-propio {
+                        top: 90px;
+                        left: 70%;
+                    }
+                }*/
+                    /*parte central del nav*/
+                    
+                    .grid-container-nav {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                    
+                    .nav-buscador form {
+                        width: 70%;
+                        height: 50%;
+                        border: 1px solid #fc5a34;
+                        margin-top: 5%;
+                    }
+                    
+                    .nav-buscador form input:first-child {
+                        margin-top: 4%;
+                        margin-left: 2%;
+                        width: 50%;
+                        border: 0px;
+                        color: #999999;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                    .nav-buscador form input:last-child {
+                        float: right;
+                        width: 16%;
+                        border: 11px solid #fc5a34;
+                    }
+                    
+                    .nav-car img {
+                        position: relative;
+                        top: 15px;
+                    }
+                    
+                    img~a {
+                        font-family: 'Rajdhani', sans-serif;
+                        text-decoration: none;
+                        color: #333333;
+                        font-size: 16px;
+                    }
+                    
+                    .nav-car a:link {
+                        font-weight: bold;
+                    }
+                    
+                    @media (max-width: 1088px) {
+                        .grid-container-nav {
+                            margin-left: 5%;
+                        }
+                    }
+                    /*@media(max-width:926px) {
+                        .grid-container-nav {
+                            grid-template-columns: auto;
+                            text-align: center;
+                            width: 100%;
+                        }
+                        .nav-buscador form {
+                            width: 200px;
+                            height: 30px;
+                            position: relative;
+                            left: 35%;
+                        }
+                        .nav-buscador form input:first-child {
+                            margin-top: 10px;
+                            margin-left: 10px;
+                            width: 100px;
+                            font-size: 8px;
+                        }
+                        .nav-buscador form input:last-child {
+                            float: right;
+                            width: 30px;
+                            border: 5px solid #fc5a34;
+                        }
+                    }
+                    
+                    @media(max-width:976px) {
+                        .grid-container-nav {
+                            margin-left: 0%;
+                        }
+                    }*/
+                    /*parte superior del nav*/
+                    
+                    .nav-superior {
+                        width: 100%;
+                        height: 30px;
+                        background-color: #eeeeee;
+                        color: #ababab;
+                        font-size: 10px;
+                        list-style-type: none;
+                        font-family: 'Merriweather Sans', sans-serif;
+                    }
+                    
+                    .nav-superior-parte-derecha li,
+                    .nav-superior-parte-izquierda li {
+                        display: inline;
+                        padding-right: 5px;
+                    }
+                    
+                    .nav-superior-parte-derecha ul {
+                        position: absolute;
+                        right: 180px;
+                        top: 0px;
+                    }
+                    
+                    .nav-superior-parte-izquierda ul {
+                        margin-left: 150px;
+                    }
+                    
+                    @media(max-width: 955px) {
+                        .nav-superior {
+                            height: 60px;
+                            text-align: center;
+                        }
+                        .nav-superior-parte-derecha ul {
+                            position: static;
+                        }
+                        .nav-superior-parte-izquierda ul {
+                            margin-left: 0px;
+                        }
+                    }
+                    
+                    @media(max-width:441px) {
+                        .nav-superior {
+                            height: 120px;
+                            text-align: center;
+                        }
+                        .nav-superior-parte-derecha li,
+                        .nav-superior-parte-izquierda li {
+                            display: block;
+                            padding-right: 0px;
+                        }
+                    }
+                    /*Barra de navegacion*/
+                    
+                    .navbar {
+                        font-size: 16px;
+                        background-color: #2a2c3c;
+                        font-family: 'Rajdhani', sans-serif;
+                        margin-bottom: -170px;
+                    }
+                    
+                    .navbar ul {
+                        padding-left: 15%;
+                        list-style-type: none;
+                        overflow: hidden;
+                    }
+                    
+                    .navbar li {
+                        float: left;
+                    }
+                    
+                    .navbar li a,
+                    .dropbtn {
+                        display: inline-block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        background-color: #2a2c3c;
+                        border: 0px;
+                        font-family: 'Rajdhani', sans-serif;
+                        font-size: 16px;
+                    }
+                    
+                    .navbar li a:hover,
+                    .dropdown:hover .dropbtn {
+                        background-color: #fc5a34;
+                    }
+                    
+                    .navbar li.dropdown {
+                        display: inline-block;
+                    }
+                    
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #2a2c3c;
+                    }
+                    
+                    .dropdown-content a {
+                        color: #2a2c3c;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                    }
+                    
+                    .dropdown-content a:hover {
+                        background-color: #fc5a34;
+                    }
+                    
+                    .dropdown:hover .dropdown-content {
+                        display: block;
+                        z-index: 1;
+                    }
+                    /*Imagen con buscador*/
+                    
+                    #imagen-cabecera {
+                        position: relative;
+                        z-index: 0;
+                        width: 100%;
+                        top: 150px;
+                    }
+                    
+                    .contenedor-imagen-buscador {
+                        width: 100%;
+                        position: relative;
+                        top: -180px;
+                        text-align: center;
+                    }
+                    
+                    h1 {
+                        font-family: 'Rajdhani', sans-serif;
+                        color: #e8e6e7;
+                        font-size: 42px;
+                    }
+                    
+                    .text-center {
+                        color: #ffffff;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        font-size: 12px;
+                    }
+                    
+                    #cars:enabled {
+                        background-color: #e9e9ed;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        font-size: 10px;
+                        border: 0px;
+                        width: 170px;
+                        height: 33px;
+                        color: #3c517a;
+                    }
+                    
+                    #model:enabled {
+                        background-color: #bbbbbb;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        font-size: 10px;
+                        border: 0px;
+                        width: 170px;
+                        height: 33px;
+                        color: #3c517a;
+                    }
+                    
+                    #model:focus {
+                        background-color: white;
+                    }
+                    
+                    #year:optional {
+                        background-color: #bbbbbb;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        font-size: 10px;
+                        border: 0px;
+                        width: 170px;
+                        height: 33px;
+                        color: #3c517a;
+                    }
+                    
+                    #year:focus {
+                        background-color: white;
+                    }
+                    
+                    #boton-buscar {
+                        background-color: #fc5a34;
+                        color: #feeeea;
+                        font-family: 'Rajdhani', sans-serif;
+                        font-weight: bold;
+                        border: 0px;
+                        width: 100px;
+                        height: 33px;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    
+                    @media(max-width:890px) {
+                        .contenedor-imagen-buscador {
+                            top: -100px;
+                            text-align: center;
+                        }
+                    }
+                    
+                    @media(max-width:682px) {
+                        h1 {
+                            font-family: 'Rajdhani', sans-serif;
+                            color: #e8e6e7;
+                            font-size: 22px;
+                        }
+                        .contenedor-imagen-buscador {
+                            top: -10px;
+                        }
+                        #cars:enabled {
+                            font-size: 10px;
+                            width: 100px;
+                            height: 20px;
+                        }
+                        #model:enabled {
+                            font-size: 10px;
+                            width: 100px;
+                            height: 20px;
+                        }
+                        #year:optional {
+                            font-size: 10px;
+                            width: 100px;
+                            height: 20px;
+                        }
+                        #boton-buscar {
+                            width: 50px;
+                            height: 33px;
+                            font-size: 12px;
+                            text-align: center;
+                        }
+                    }
+                    
+                    @media(max-width:432px) {
+                        h1 {
+                            font-size: 12px;
+                        }
+                        .text-center {
+                            font-size: 6px;
+                        }
+                        .contenedor-imagen-buscador {
+                            top: 50px;
+                        }
+                        #cars:enabled {
+                            font-size: 8px;
+                            width: 70px;
+                            height: 10px;
+                        }
+                        #model:enabled {
+                            font-size: 8px;
+                            width: 70px;
+                            height: 10px;
+                        }
+                        #year:optional {
+                            font-size: 8px;
+                            width: 70px;
+                            height: 10px;
+                        }
+                        #boton-buscar {
+                            width: 40px;
+                            height: 10px;
+                            font-size: 8px;
+                            text-align: center;
+                        }
+                    }
+                    /*Iconos de envio, etc*/
+                    
+                    .grid-container-iconos {
+                        display: grid;
+                        grid-template-columns: auto auto auto auto auto auto auto auto;
+                        width: 60%;
+                        margin-left: 20%;
+                        margin-right: 20%;
+                        margin-top: -3%;
+                    }
+                    
+                    .grid-item-descripcion {
+                        margin-left: -10%;
+                    }
+                    
+                    .grid-item-descripcion p {
+                        margin-bottom: -10px;
+                    }
+                    
+                    @media(max-width:1000px) {
+                        .grid-container-iconos {
+                            width: 100%;
+                            margin-left: 0%;
+                            margin-right: 0%;
+                            margin-top: -5%;
+                        }
+                    }
+                    
+                    @media(max-width:678px) {
+                        .grid-container-iconos {
+                            grid-template-columns: auto auto auto auto;
+                            margin-top: 5%;
+                        }
+                    }
+                    
+                    @media(max-width:432px) {
+                        .grid-container-iconos {
+                            margin-top: 25%;
+                        }
+                    }
+                    /*productos*/
+                    
+                    #publicidad-productos {
+                        padding-top: 40px;
+                        padding-left: 15%;
+                        padding-right: 100px;
+                        padding-bottom: 80px;
+                    }
+                    
+                    .publicidad {
+                        width: 220px;
+                    }
+                    
+                    #tabla-cabecera {
+                        grid-area: header;
+                        margin-left: -3%;
+                    }
+                    
+                    #tabla-cabecera a {
+                        padding-left: 3%;
+                    }
+                    
+                    #grid-tabla-productos {
+                        display: grid;
+                        grid-template-areas: "header header header";
+                        width: 60%;
+                        text-align: left;
+                        font-family: 'Rajdhani', sans-serif;
+                        color: #333333;
+                        margin-top: -560px;
+                        margin-bottom: 500px;
+                        margin-left: 25%;
+                    }
+                    
+                    .next-producto,
+                    .prev-producto {
+                        float: right;
+                    }
+                    
+                    @media(max-width:1166px) {
+                        #publicidad-productos {
+                            padding-top: 2%;
+                            padding-left: 5%;
+                        }
+                        .publicidad {
+                            width: 180px;
+                        }
+                        #grid-tabla-productos {
+                            margin-top: -470px;
+                        }
+                    }
+                    
+                    @media(max-width:892px) {
+                        #grid-tabla-productos {
+                            grid-template-areas: 'header header';
+                            grid-auto-columns: 180px;
+                            grid-auto-rows: 60%;
+                            margin-left: 40%;
+                        }
+                        .next-producto {
+                            margin-right: 40%;
+                        }
+                    }
+                    
+                    @media(max-width:600px) {
+                        #grid-tabla-productos {
+                            margin-top: 0px;
+                            margin-bottom: 500px;
+                            margin-left: -50%;
+                        }
+                        .next-producto {
+                            margin-right: 70%;
+                        }
+                        #publicidad-productos {
+                            padding-top: 40px;
+                            padding-left: 30%;
+                        }
+                    }
+                    
+                    h5+img+p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        font-family: 'Rajdhani', sans-serif;
+                        position: relative;
+                        top: -45px;
+                    }
+                    
+                    .img-estrellas {
+                        width: 50px;
+                        position: relative;
+                        top: -27px;
+                    }
+                    /*Imagenes marcas*/
+                    
+                    #imagenes-marcas {
+                        margin-bottom: -300px;
+                        margin-top: -600px;
+                    }
+                    
+                    .img-fondo-marcas {
+                        width: 100%;
+                    }
+                    
+                    .marcas h2 {
+                        position: relative;
+                        bottom: 450px;
+                        font-size: 26px;
+                        font-family: 'Rajdhani', sans-serif;
+                        color: #e8e8e9;
+                        text-align: center;
+                    }
+                    
+                    .marcas p {
+                        position: relative;
+                        bottom: 460px;
+                        font-size: 10px;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        color: #787878;
+                        text-align: center;
+                    }
+                    
+                    .flex-container-marcas {
+                        margin-bottom: 350px;
+                        margin-top: -420px;
+                        margin-left: 15%;
+                        margin-right: 10%;
+                        flex-wrap: wrap;
+                        width: 70%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                    .flex-container-marcas img {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    
+                    .flex-container-marcas div {
+                        padding: 10px;
+                    }
+                    
+                    @media(max-width:1219px) {
+                        .flex-container-marcas {
+                            margin-left: 0%;
+                            margin-right: 0%;
+                            width: 100%;
+                        }
+                    }
+                    
+                    @media(max-width:1085px) {
+                        .flex-container-marcas img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                        .flex-container-marcas {
+                            margin-bottom: 400px;
+                            margin-top: -280px;
+                        }
+                        .marcas h2 {
+                            bottom: 290px;
+                            font-size: 22px;
+                        }
+                        .marcas p {
+                            bottom: 290px;
+                            font-size: 12px;
+                        }
+                    }
+                    /*Departamentos*/
+                    
+                    .flex-container {
+                        display: flex;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                    }
+                    
+                    .flex-container>div {
+                        padding: 10px;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                    
+                    .flex-container img {
+                        width: 90%;
+                        height: 60%;
+                    }
+                    /* Seleccion Productos */
+                    
+                    .secciones-productos {
+                        font-size: 18px;
+                        width: 50%;
+                        margin-left: 15%;
+                    }
+                    
+                    .secciones-productos a:hover {
+                        border-bottom: 2px solid #fc5a34;
+                        color: #fc5a34;
+                    }
+                    
+                    .prev,
+                    .next {
+                        float: right;
+                        border: 1px solid #787878;
+                        cursor: pointer;
+                        width: auto;
+                        padding: 10px;
+                        color: #787878;
+                        font-weight: bold;
+                        font-size: 7px;
+                        transition: 0.6s ease;
+                        border-radius: 1px 1px 1px 1px;
+                        user-select: none;
+                    }
+                    
+                    .prev2,
+                    .next2 {
+                        float: right;
+                        border: 1px solid #ffffff;
+                        cursor: pointer;
+                        width: auto;
+                        padding: 4px;
+                        color: #ffffff;
+                        font-weight: bold;
+                        font-size: 6px;
+                        transition: 0.6s ease;
+                        border-radius: 1px 1px 1px 0;
+                        user-select: none;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    
+                    .caja-naranja {
+                        border: 1px solid #fc5a34;
+                        width: 200px;
+                        height: 350px;
+                    }
+                    
+                    .grid-contenedor-productos {
+                        margin-left: 15%;
+                        margin-top: 40px;
+                        display: grid;
+                        grid-template-columns: auto auto auto auto;
+                        width: 70%;
+                    }
+                    
+                    .grid-contenedor-productos img:first-child {
+                        width: 180px;
+                        height: 180px;
+                    }
+                    
+                    .grid-item-producto2,
+                    .grid-item-producto1,
+                    .grid-item-producto3,
+                    .grid-item-producto4 {
+                        width: 150px;
+                        font-size: 14px;
+                    }
+                    
+                    .grid-item-producto4 {
+                        margin-top: -60px;
+                        text-align: center;
+                    }
+                    
+                    .grid-item-producto4 img :first-child {
+                        width: 180px;
+                        height: 180px;
+                    }
+                    
+                    .quitar-espacios {
+                        margin-bottom: 0px;
+                        margin-top: -2px;
+                    }
+                    
+                    @media(max-width:1027px) {
+                        .grid-contenedor-productos {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                        .secciones-productos {
+                            margin-left: 0%;
+                        }
+                    }
+                    /*Slide*/
+                    
+                    #contenedor-titulo {
+                        background-color: #fc5a34;
+                        width: 200px;
+                        height: 40px;
+                    }
+                    
+                    #contenedor-titulo h4 {
+                        float: left;
+                        color: #ffffff;
+                        margin-top: 10px;
+                        margin-left: 7px;
+                    }
+                    
+                    @keyframes slide {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        10% {
+                            transform: translateX(0);
+                        }
+                        15% {
+                            transform: translateX(-100%);
+                        }
+                        30% {
+                            transform: translateX(-100%);
+                        }
+                        35% {
+                            transform: translateX(-200%);
+                        }
+                        50% {
+                            transform: translateX(-200%);
+                        }
+                        55% {
+                            transform: translateX(-300%);
+                        }
+                        70% {
+                            transform: translateX(-300%);
+                        }
+                        75% {
+                            transform: translateX(-400%);
+                        }
+                        90% {
+                            transform: translateX(-400%);
+                        }
+                        95% {
+                            transform: translateX(-500%);
+                        }
+                        100% {
+                            transform: translateX(-500%);
+                        }
+                    }
+                    
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                    
+                    body {
+                        font-family: sans-serif;
+                    }
+                    
+                    .wrapper {
+                        width: 100%;
+                    }
+                    
+                    .slider {
+                        position: relative;
+                    }
+                    
+                    .slides {
+                        position: relative;
+                        display: flex;
+                        overflow: hidden;
+                    }
+                    
+                    .slide {
+                        width: 100%;
+                        position: relative;
+                        left: 0%;
+                    }
+                    
+                    .slide img {
+                        width: 100%;
+                    }
+                    
+                    .slider-controler {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        text-align: center;
+                        padding: 5px;
+                        z-index: 100;
+                    }
+                    
+                    .slider-controler li {
+                        margin: 0 0.5rem;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    
+                    a[href$="slide"] {
+                        display: inline-block;
+                        vertical-align: top;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                    
+                    .slider-controler a:hover {
+                        color: #fc5a34;
+                    }
+                    
+                    @media only screen and (max-width: 1200px) {
+                        .slide {
+                            width: 100%;
+                        }
+                    }
+                    
+                    .caja-texto {
+                        text-align: center;
+                        position: relative;
+                        top: 230px;
+                        color: #e8e8e9;
+                    }
+                    
+                    .caja-texto h2 {
+                        font-family: 'Rajdhani', sans-serif;
+                    }
+                    
+                    @media(max-width:999px) {
+                        .slide img {
+                            height: 300px;
+                        }
+                    }
+                    /*Articulos*/
+                    
+                    #articulos {
+                        margin-left: 10%;
+                        margin-bottom: 30px;
+                    }
+                    
+                    #articulos a {
+                        font-weight: bold;
+                    }
+                    
+                    .grid-container-articulos {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        grid-template-areas: 'header header header';
+                    }
+                    
+                    .item1 {
+                        grid-area: header;
+                        text-align: center;
+                    }
+                    
+                    .item2,
+                    .item3,
+                    .item4 {
+                        width: 320px;
+                    }
+                    
+                    @media(max-width:1101px) {
+                        #articulos {
+                            margin-left: 0%;
+                        }
+                        .item2 img,
+                        .item3 img,
+                        .item4 img {
+                            width: 100%;
+                        }
+                        .item2,
+                        .item3,
+                        .item4 {
+                            width: 90%;
+                        }
+                    }
+                    /*PIE*/
+                    
+                    .logo-web {
+                        width: 90%;
+                    }
+                    
+                    .contenedor-pie {
+                        background-color: #2a2c3d;
+                        font-family: 'Rajdhani', sans-serif;
+                        font-size: 12px;
+                        color: #b1b1b4;
+                    }
+                    
+                    .box {
+                        display: flex;
+                        margin-left: 70px;
+                        margin-right: 100px;
+                        margin-bottom: 30px;
+                        padding-top: 30px;
+                        justify-content: space-around;
+                    }
+                    
+                    .box1 {
+                        width: 28%;
+                        font-family: 'Merriweather Sans', sans-serif;
+                    }
+                    
+                    .box2 {
+                        padding-top: 40px;
+                        width: 12%;
+                    }
+                    
+                    .box3 {
+                        padding-top: 40px;
+                        width: 12%;
+                    }
+                    
+                    .box4 {
+                        width: 15%;
+                        padding-top: 40px;
+                    }
+                    
+                    video {
+                        padding-right: 40%;
+                    }
+                    
+                    @media(max-width:1014px) {
+                        video {
+                            padding-right: 110%;
+                        }
+                    }
+                    
+                    .lista-pie li {
+                        list-style-type: none;
+                        padding-right: 5px;
+                    }
+                    
+                    .enlace-pie {
+                        color: #b1b1b4;
+                        font-family: 'Merriweather Sans', sans-serif;
+                        text-decoration: none;
+                    }
+                    
+                    h4 {
+                        font-size: 15px;
+                        font-family: 'Rajdhani', sans-serif;
+                    }
+                    
+                    .box-container {
+                        display: flex;
+                        justify-content: space-around;
+                        margin-left: 15px;
+                    }
+                    
+                    .texto-articulos {
+                        font-size: 12px;
+                    }
+                    
+                    .img-articulo {
+                        width: 320px;
+                        height: 200px;
+                    }
+                    
+                    @media(max-width:778px) {
+                        /*Parte superior del pie*/
+                        video {
+                            padding-right: 10%;
+                        }
+                        .box {
+                            flex-wrap: wrap;
+                        }
+                        .box1 {
+                            width: 100%;
+                            font-family: 'Merriweather Sans', sans-serif;
+                        }
+                        .box2 {
+                            width: 100%;
+                        }
+                        .box3 {
+                            width: 100%;
+                        }
+                        .box4 {
+                            width: 100%;
+                        }
+                        /*parte inferior del pie*/
+                        .box-container {
+                            flex-wrap: wrap;
+                        }
+                    }
+                    
+                    @media(max-width:691px) {
+                        .flex-container-marcas img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .flex-container-marcas {
+                            margin-bottom: 400px;
+                            margin-top: -280px;
+                        }
+                        .marcas h2 {
+                            bottom: 280px;
+                            font-size: 12px;
+                        }
+                        .marcas p {
+                            bottom: 280px;
+                            font-size: 8px;
+                        }
+                        .img-fondo-marcas {
+                            height: 300px;
+                        }
+                        /*Departamentos*/
+                        .flex-container {
+                            padding-left: 0%;
+                            padding-right: 0%;
+                        }
+                        .flex-container>div {
+                            font-size: 10px;
+                        }
+                        .flex-container img {
+                            width: 70%;
+                            height: 40%;
+                        }
+                        /*Seleccion de productos*/
+                        .secciones-productos {
+                            font-size: 18px;
+                            width: 100%;
+                        }
+                        .grid-contenedor-productos {
+                            display: grid;
+                            grid-template-columns: auto auto;
+                        }
+                        .grid-contenedor-productos img:first-child {
+                            width: 140px;
+                            height: 140px;
+                        }
+                        .grid-item-producto4 {
+                            margin-top: 0px;
+                        }
+                        /*Slide*/
+                        .item2,
+                        .item3,
+                        .item4 {
+                            width: 60%;
+                            margin-left: 25%;
+                            text-align: center;
+                        }
+                        .grid-container-articulos {
+                            grid-template-columns: auto;
+                            grid-template-areas: 'header';
+                        }
+                    }
